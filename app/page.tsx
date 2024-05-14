@@ -8,7 +8,13 @@ export default function Home() {
         <div className="pt-5 mb-40">
           <ModeToggle />
         </div>
-        <ProfileBox />
+
+        <div className="flex justify-between">
+          <ProfileBox />
+          <div className="flex">
+            {/* <CategoryBoard /> */}
+          </div>
+        </div>
       </div>
     </main>
   );
