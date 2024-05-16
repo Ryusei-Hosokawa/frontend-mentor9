@@ -1,22 +1,22 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 interface BoardImageProps {
-  imageName: string;
-  imageWidth: number;
-  backgroundColor: string;
+  name: string;
+  width: number;
+  height: number;
+  bgColor: string;
+  additionalClass?: string;
 }
 
-export default function BoardImage({imageName, imageWidth, backgroundColor}: BoardImageProps) {
-
-  const bgClass = `bg-[#${backgroundColor}]`
-  
+export default function BoardImage({ name, width, height, bgColor, additionalClass }: BoardImageProps) {
   return (
-    <div className={`relative w-full rounded-[15px] ${bgClass}`}>
+    <div className={`relative w-full  h-[160px] rounded-[15px] ${bgColor}`}>
       <Image
-        src={`/images/${imageName}`}
+        src={`/images/${name}`}
         alt="Board icon"
-        width={imageWidth}
-        className="absolute w-[78px] h-[78px]"
+        width={width}
+        height={height}
+        className={`absolute ${additionalClass}`}
       />
     </div>
   );

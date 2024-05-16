@@ -1,11 +1,42 @@
-// import BoardImage from "@/components/board-image";
-// import ReportContents from "@/components/report-contents";
+import BoardImage from "@/components/board-image";
+import CategoryStatus from "@/components/category-status";
 
-// export default function PersonReport() {
-//   return (
-//     <div className="bg-[#5747EA] rounded-[15px] pt-[37px] pb-[80px] px-[32px]">
-//       <BoardImage />
-//       <ReportContents />
-//     </div>
-//   );
-// }
+interface CategoryBoardProps {
+  imageName: string;
+  imageWidth: number;
+  imageHeight: number;
+  imageBgColor: string;
+  imageAdditionalClass?: string;
+  categoryName: string;
+  categoryTime: number;
+  categoryPreviousResult: number;
+}
+
+
+export default function CategoryBoard(
+    {imageName, 
+    imageWidth, 
+    imageHeight, 
+    imageBgColor, 
+    imageAdditionalClass, 
+    categoryName, 
+    categoryTime, 
+    categoryPreviousResult}: CategoryBoardProps
+) {
+  return (
+    <li className="overflow-hidden w-[255px] list-none relative rounded-[15px]">
+      <BoardImage
+        name={imageName}
+        width={imageWidth}
+        height={imageHeight}
+        bgColor={imageBgColor}
+        additionalClass={imageAdditionalClass}
+      />
+      <CategoryStatus 
+        name={categoryName}
+        time={categoryTime}
+        previousResult={categoryPreviousResult}
+      />
+    </li>
+  );
+}

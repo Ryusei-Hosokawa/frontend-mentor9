@@ -66,14 +66,14 @@
     }
   }
 
-  @layer base {
+  /* @layer base {
     * {
-      @apply border-border;
+      @apply .border-borer;
     }
     body {
       @apply bg-background text-foreground;
     }
-  }
+  } */
 
   @font-face {
     font-family: 'Rubik';
