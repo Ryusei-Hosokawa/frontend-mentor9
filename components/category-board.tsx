@@ -24,7 +24,7 @@ export default function CategoryBoard(
     categoryPreviousResult}: CategoryBoardProps
 ) {
   return (
-    <li className="overflow-hidden w-[255px] list-none relative rounded-[15px]">
+    <li className="overflow-hidden w-[30.9%] list-none relative rounded-[15px]">
       <BoardImage
         name={imageName}
         width={imageWidth}

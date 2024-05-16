@@ -10,10 +10,10 @@ export default function Home() {
           <ModeToggle />
         </div>
         
-        <div className="w-full">
-          <div className="w-full justify-center flex gap-[28px]">
+        <div className="w-full max-w-[1100px]">
+          <div className="mx-auto flex gap-[28px]">
             <ProfileBox />
-            <ul className="w-full relative flex justify-center flex-wrap gap-[30px]">
+            <ul className="w-full relative flex justify-center flex-wrap gap-[3.6%]">
               <CategoryBoard
                 imageName="icon-work.svg"
                 imageWidth={87}
