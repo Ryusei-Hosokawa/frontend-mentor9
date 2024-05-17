@@ -4,16 +4,16 @@ import CategoryBoard from "@/components/category-board";
 
 export default function Home() {
   return (
-    <main className="px-[15px] font-Rubik">
+    <main className="px-[15px] pb-[100px] font-Rubik">
       <div className="max-w-[1110px] mx-auto">
-        <div className="pt-5 mb-40">
+        <div className="pt-5 lg:mb-40 mb-[20px]">
           <ModeToggle />
         </div>
         
         <div className="w-full max-w-[1100px]">
-          <div className="mx-auto flex gap-[28px]">
+          <div className="mx-auto flex flex-col lg:flex-row lg:gap-x-[30px] gap-x-[2.6%] gap-y-[24px]">
             <ProfileBox />
-            <ul className="w-full relative flex justify-center flex-wrap gap-[3.6%]">
+            <ul className="w-full relative flex justify-center flex-wrap gap-x-[3.6%] lg:gap-y-[30px] gap-y-[24px]">
               <CategoryBoard
                 imageName="icon-work.svg"
                 imageWidth={87}

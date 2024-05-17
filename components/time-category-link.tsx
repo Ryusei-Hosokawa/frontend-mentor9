@@ -19,8 +19,8 @@ export default function TimeCategoryLink({
         href={href}
         className={
           isActive
-            ? "block [&:not(:last-child)]:mb-[21px] leading-[1em] text-[#fff]"
-            : "block [&:not(:last-child)]:mb-[21px] leading-[1em] text-[#7078C9]"
+            ? "w-[109px] text-center lg:text-start block mb-0 lg:[&:not(:last-child)]:mb-[21px] leading-[1em] text-[#fff]"
+            : "w-[109px] text-center lg:text-start block mb-0 lg:[&:not(:last-child)]:mb-[21px] leading-[1em] text-[#7078C9]"
         }
         onClick={onClick}
       >

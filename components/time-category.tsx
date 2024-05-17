@@ -7,7 +7,7 @@ export default function TimeCategory() {
   const [activeLink, setActiveLink] = useState("Daily");
 
   return (
-    <div className="pt-[28px] pb-[32px] px-[30px] text-[18px] font-[400] text-[#7078C9] leading-[1em]">
+    <div className="flex lg:flex-col justify-between sm:justify-start pt-[28px] pb-[32px] px-0 lg:px-[30px] text-[18px] font-[400] text-[#7078C9] leading-[1em]">
       <TimeCategoryLink
         href="/"
         linkText="Daily"
